@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Desafio Metodos de Arreglo</title>
+</head>
+
+
+<body>
+
+    <div class="container">
+        <h1>Todo List</h1>
+        <input type="text" id="input-tareas" placeholder="Agregar tarea...">
+        <button id="addBtnTareas">Agregar</button>
+        <div class="summary">
+            <p>Total de tareas: <span id="totalTareas">3</span></p>
+            <p>Tareas realizadas: <span id="tareasCompletas">0</span></p>
+        </div>
+        <div class="tareas">
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Tarea</th>
+                        <th>Realizado</th>
+                        <th>Eliminar</th>
+                    </tr>
+                </thead>
+                <tbody id="lista-tareas">
+                    <!-- Aquí se agregarán las tareas dinámicamente -->
+                    <!-- Tarea preexistente -->
+                    <tr data-id="15">
+                        <td>15</td>
+                        <td>Pasear al perro</td>
+                        <td><input type="checkbox"></td>
+                        <td><button class="borrarBtn">Eliminar</button></td>
+                    </tr>
+                    <!-- Repetir formato para las otras tareas preexistentes -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
